@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Query_Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Query">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:fontFamily="casual"
+            android:text="学号：201658080203"
+            android:textSize="13dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:fontFamily="casual"
+            android:text="姓名：王娜"
+            android:textSize="13dp" />
+    </RelativeLayout>
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/query_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:text="@string/hello_query"
+            android:textSize="25dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/query_et"
+                android:layout_width="215dp"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/image_frame"
+                android:fontFamily="casual"
+                android:hint="请输入菜名"
+                android:paddingLeft="5dp" />
+
+            <Button
+                android:id="@+id/query_btn"
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/button_frame"
+                android:fontFamily="casual"
+                android:text="查询"
+                android:textColor="@color/txt"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/query_sum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="casual"
+            android:gravity="right"
+            android:text="Sum: 00"
+            android:textStyle="bold"
+            android:textSize="15dp" />
+
+        <ListView
+            android:id="@+id/query_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/image_frame" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Modify">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:fontFamily="casual"
+            android:text="学号：201658080203"
+            android:textSize="13dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:fontFamily="casual"
+            android:text="姓名：王娜 "
+            android:textSize="13dp" />
+    </RelativeLayout>
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/modify_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:text="@string/hello_modify"
+            android:textSize="25dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <Button
+                android:id="@+id/modify_btn"
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/button_frame"
+                android:fontFamily="casual"
+                android:text="修改数据"
+                android:textColor="@color/txt" />
+
+            <Button
+                android:id="@+id/modify_btnDelete"
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/button_frame"
+                android:fontFamily="casual"
+                android:text="删除数据"
+                android:textColor="@color/txt" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/modify_hide1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/modify_etQuery"
+                    android:layout_width="215dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/image_frame"
+                    android:fontFamily="casual"
+                    android:hint="请输入菜名"
+                    android:paddingLeft="5dp" />
+
+                <Button
+                    android:id="@+id/modify_btnCheck"
+                    android:layout_width="85dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/button_frame"
+                    android:fontFamily="casual"
+                    android:text="确认"
+                    android:textColor="@color/txt"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/modify_hide2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/image_frame"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/modify_hide3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="45dp"
+                    android:fontFamily="casual"
+                    android:gravity="center"
+                    android:text="菜名："
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/modify_tvIn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:fontFamily="casual"
+                    android:gravity="center"
+                    android:text="菜名"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="45dp"
+                    android:fontFamily="casual"
+                    android:gravity="center"
+                    android:text="食材："
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/modify_etIn2"
+                    android:layout_width="200dp"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/image_frame"
+                    android:fontFamily="casual"
+                    android:gravity="top"
+                    android:hint="请输入菜谱原料"
+                    android:minLines="5"
+                    android:paddingLeft="5dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/modify_btnSave"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button_frame"
+                android:fontFamily="casual"
+                android:text="保存数据"
+                android:textColor="@color/txt"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

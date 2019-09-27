@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">NO5Ending</string>
+    <string name="data_query">查询数据</string>
+    <string name="data_increase">增加数据</string>
+    <string name="data_modify">修改数据</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_login">Login ---登录</string>
+    <string name="hello_query">Query ---查询数据</string>
+    <string name="hello_increase">Increas  ---添加数据</string>
+    <string name="hello_modify">Modify ---修改及删除数据</string>
+</resources>
